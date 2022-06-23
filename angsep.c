@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main(){
-
+    
     FILE *RA_ROSAT, *RA_Einstein, *DEC_ROSAT, *DEC_Einstein, *fptr;
     RA_ROSAT = fopen("RA_ROSAT.txt","r");
     RA_Einstein = fopen("RA_Einstein.txt","r");
@@ -23,7 +23,8 @@ int main(){
         fscanf(DEC_Einstein, "%f", &DEC_E[i]);
     }
 
-//double coor_data(float DEC_E, float DEC_R, float RA_E, float RA_R, float *theta, float *DEC_E, float *DEC_R, float *RA_E, float *RA_R, int *size;){//takes in numbers in degree
+//double coor_data(float DEC_E, float DEC_R, float RA_E, float RA_R, float *theta, float *DEC_E, float *DEC_R, float *RA_E, float *RA_R, int *size;){
+    //takes in numbers in degree
     printf("Start Program\n");
 
     for(i = 0; i < sizeof(DEC_E); i ++){
